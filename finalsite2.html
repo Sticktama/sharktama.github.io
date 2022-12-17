@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hoshiyomi Observatory</title>
+        <link rel = "icon" href ="orch.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="final.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body style="background-color: rgb(217, 217, 217)"> 
+        
+            <div id="bar2" class="container-fluid">
+                <div class="row justify-content-center align-items-center text-center">
+                <div class="col-lg-7 col-md-3 col-sm-12 text-md-start text-sm-center" style="padding:0;">
+                <a href="finalsite.html"><img src="orch.png" width="115vh"></a>
+                </div>
+                        <div class="col-lg-1 col-md-2 col-sm-10"><a href="finalsite.html">Home</a></div>
+                        <div class="col-lg-1 col-md-2 col-sm-10"><a id="active" href="#"><span>__</span>Comet<span>__</span></a></div>
+                        <div class="col-lg-1 col-md-2 col-sm-10"><a href="finalsite3.html">Stargaze</a></div>
+                        <div class="col-lg-1 col-md-2 col-sm-10"><a href="finalsite4.html">Join Us</a></div>
+                </ul>
+                </div>
+            </div>
+            <div class="container-fluid" style="margin-top: 70px">
+                <div class="row justify-content-center">    
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center" style="padding:0; animation: 0.5s transitionin;"><img src="sui.png" style="width:65vmin;"></div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 text-lg-start text-md-center text-sm-center" style="animation: 0.5s transitionin;"><h1 style="font-size:7vmin; text-align: center">HOSHIMACHI SUISEI</h1>
+                            <div style="text-align: center; margin-right: 5%; margin-left: 5%; font-size: 2.8vmin;">
+                            <p>"It's your shooting star, your diamond in the rough, idol VTuber Hoshimachi Suisei!"
+                                <br><br>
+                                A forever 18 VTuber who deeply loves singing and idols.
+                                Her dream is to one day hold a live concert in Tokyo Budokan.
+                                <br><br>
+                                Suisei is a modest, multitalented singer and aspiring idol who is among the more level-headed members of hololive, 
+                                though she also has a childish streak. She is particularly well known among fans for her skill at Tetris and 
+                                her singing ability.  </p>
+                                <div class="logo" style="text-align: center;">
+                                <a href="https://www.youtube.com/@HoshimachiSuisei"><img style="margin: 2%;max-width:120px; width: 100%;" src="youtube.png"></a>
+                                <a href="https://twitter.com/suisei_hosimati"><img style="margin: 2%;max-width:120px; width: 100%;" src="twitter.png"></a>
+                                <a href="https://hololive.hololivepro.com/en/talents/hoshimachi-suisei/"><img style="margin: 2%;max-width:250px; width: 100%;" src="hololive.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        <script>
+            var video = document.getElementById('ghost');
+            var time = 40;
+            video.currentTime = time;
+            video.addEventListener('timeupdate', function() {
+
+            if (this.currentTime >= 20) {
+                this.pause();
+                /// next action
+            }
+
+            }, false);
+            var audio = document.getElementById('star');
+            audio.volume = 0.3;
+            function show() {
+            document.getElementById('text').style.display = "block";
+            }
+            window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav");
+            header.classList.toggle("sticky", window.scrollY > 320);
+            })
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hoshiyomi Observatory</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="final.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body class="bg-image"> 
+        <div></div>
+        <div id="center">
+            <div id="load"><img src="cute.gif" width="100%"></div>
+        </div>
+        
+            <div id="bar" class="container-fluid">
+                <div class="row justify-content-center align-items-center text-center">
+                <div class="col-lg-7 col-md-3 col-sm-12 text-md-start text-sm-center" style="padding:0;">
+                <img src="orch.png" width="115vh">
+                </div style="z-index:1;">
+                        <div class="col-lg-1 col-md-2 col-sm-10"><a id="active" href="#"><span>__</span>Home<span>__</span></a></div>
+                        <div class="col-lg-1 col-md-2 col-sm-10"><a href="finalsite2.html">Comet</a></div>
+                        <div class="col-lg-1 col-md-2 col-sm-10"><a href="finalsite3.html">Stargaze</a></div>
+                        <div class="col-lg-1 col-md-2 col-sm-10"><a href="finalsite4.html">Join Us</a></div>
+                </div>
+            </div>
+                <div style="color:white; animation: 10s loadin; ">    
+                <div style="text-align: left; font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 5%;">
+                    <h1 style="font-size:6.5vmin; min-width: 50px">
+                        <b><span style="opacity: 1; color: rgb(79,159,239);">HOSHIYOMI</span> OBSERVATORY</b>
+                    </h1>
+                <div style="text-align: justify;  font-size:3vmin; margin-right: 5%">
+                <h3 style="font-size:5vmin;">Unofficial Fansite of Hoshimachi Suisei</h3>
+                    <br><br>
+                    <p class="col-lg-6 col-md-7 col-sm-7">
+                        This site is geared towards us kaigai-nikis who want to support Suichan and learn more about her journey as our shining idol. 
+                        In the site, you can check out information about Suichan and her songs!</p>
+                        <br>
+                        <div class="butt">
+                            <button class="prev" style="margin-right: 20px; margin-bottom: 20px;"><b>PREVIOUS</b></button>
+                            <button class="next hover"><b><span>PR</span>NEXT<span>__</span></b></button>
+                        </div>
+
+                
+
+                    
+                </div>
+                </div>
+
+                </div>
+                
+        
+        <script>
+            var video = document.getElementById('ghost');
+            var time = 40;
+            video.currentTime = time;
+            video.addEventListener('timeupdate', function() {
+
+            if (this.currentTime >= 20) {
+                this.pause();
+                /// next action
+            }
+
+            }, false);
+            var audio = document.getElementById('star');
+            audio.volume = 0.3;
+            function show() {
+            document.getElementById('text').style.display = "block";
+            }
+            window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav");
+            header.classList.toggle("sticky", window.scrollY > 320);
+            })
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+        </script>
+    </body>
+</html>

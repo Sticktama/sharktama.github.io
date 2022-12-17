@@ -1,0 +1,326 @@
+
+*{
+    z-index: 998;
+}
+
+#center{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    background: #0f0f0fb9;
+    background-blend-mode: darken;
+    animation: 10s load;
+    opacity: 0;
+    z-index: 0;
+}
+
+#load{
+	position: fixed;
+    z-index: 0;
+    opacity: 0;
+    animation: 10s load;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    align-items: center;
+}
+
+span{
+    opacity:0;
+}
+#ghost{
+    z-index: 1;
+    position: absolute;
+}
+
+#observe
+{
+    z-index: 2;
+    position:fixed;
+}
+
+#foot{
+    background: #1d1d1d url('NewCanvas1.png') no-repeat center;
+}
+@keyframes loadin {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    28% {
+        opacity: 100%;
+    }
+}
+
+@keyframes transitionin {
+    0%{
+        opacity: 0;
+    }
+    28% {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes load {
+    0% {
+        z-index: 999;
+        opacity: 100%;
+    }
+    20% {
+        opacity: 100%;
+    }
+    28% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+         bottom: -50%;
+         opacity: 0;
+    }
+    80% {
+        opacity: 50%;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp2 {
+    0% {
+         bottom: -50%;
+         opacity: 0;
+    }
+    80% {
+        opacity: 50%;
+    }
+    100% {
+        bottom: 6.5;
+        opacity: 1;
+    }
+}
+
+.bg-image{
+    min-height: 100%;
+    background-image: url(wall.jpg);
+    background-color: rgba(28, 27, 48, 0.52);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: repeat;
+    margin: 0;
+    height: 100vh;
+}
+
+
+#bar
+{
+    animation: 10s loadin;
+    z-index: 2;
+    width: 100%;
+    position: relative;
+}
+
+p, h1, h3{
+    animation: 0.5s transitionin;
+}
+#bar2
+{
+    border-bottom: 3px solid rgb(79,159,239);
+    background-color: rgb(28, 27, 48);
+    width: 100%;
+}
+
+ul, a {
+    z-index: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none!important;
+    color: white!important;
+    font-weight: bold;
+  }
+  a:hover
+  {
+    color: rgb(79,159,239)!important;
+  }
+
+  #active
+  {
+    border-top: 8px solid rgb(0,194,203);
+    padding-top:38px;
+  }
+
+
+    video {
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    
+  }
+
+  .prev{
+    padding: 12px 30px;
+    background-color: rgb(0,194,203);
+    border: 3px solid rgb(0,194,203);
+  }
+  .next {
+    border: 3px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 12px 30px;
+  }
+  
+  .hover {
+    border-color: rgb(0,194,203);
+    color: rgb(0,194,203);
+  }
+
+  .hover:hover {
+  background-color: rgb(0,194,203);
+  color: black;
+}
+fieldset{
+    background-color: aqua;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 400px;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    justify-items: center;
+}
+
+label, legend
+{
+    text-align: center;
+}
+#mute{
+    position: absolute; bottom: 7.5%; left: 26%; width: 2%; z-index: 990; animation: 0.5s slideInUp2; opacity: 1;
+}
+
+#unmute{
+    position: absolute; bottom: 7.5%; left: 26%; width: 2%; z-index: 990; animation: 0.5s slideInUp2; opacity: 0;
+}
+
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    div.col-lg-1, div.col-md-2, div.col-sm-10 {
+        width: 15%;
+    }
+    div.col-sm-12 {
+        width: 100px;
+        margin-right: 18%;
+    }
+    p.col-lg-6, p.col-md-7, p.col-sm-7{
+        width: 70%;
+    }
+    div.col-md-12
+    {
+        width: 80%;
+        margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 576px) {
+    div.col-sm-12{
+        margin-bottom: 20px;
+    }
+    div.col-sm-10 {
+        width: 25%;
+        height: 7vh;
+        padding: 0;
+    }
+    #active
+    {
+        border-top: 8px solid rgb(0,194,203);
+        padding-top:8px;
+    }
+    p.col-md-7 p.col-sm-7{
+        margin-right: 5%;
+    }
+  }
+  @media screen and (max-width: 260px) {
+    .prev{
+        margin-right: 0!important;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    div.col-sm-10 {
+        height: 6vh;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    #active
+    {
+        border-top: 8px solid rgb(0,194,203);
+        padding-top:0px;
+    }
+    video {
+        top: 120px;
+        left: 0;
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+    }
+    p{
+        margin-right: 5%;
+    }
+    .butt{
+        text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 281px) and (max-width: 576px) {
+    video {
+        top: 60px;
+        left: 0;
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+    }
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 1024px) {
+    video {
+        top: 5px;
+        left: 0;
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+    }
+    div.col-lg-1
+    {
+        width: 12%;
+    }
+    
+  }
+  @media screen and (min-width: 1024px) and (max-width: 4000px) {
+    p.col-lg-6{
+        width: 42%;
+    }
+  }
